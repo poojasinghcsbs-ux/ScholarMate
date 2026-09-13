@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarMate - Create Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="signup.css">
+    <style>.showcase{background:url('signup-background.jpeg') center right/cover}.signup-page{min-height:calc(100vh - 118px)}footer{min-height:118px;padding:20px 6%}footer>p{bottom:13px}.footer-note{bottom:11px}</style>
+    <style>.leaf-decoration{position:absolute;top:6px;right:-1px;width:66px;height:142px;opacity:.78;pointer-events:none}.two-fields label>span,.wide-field>span{position:absolute;left:54px;top:12px;z-index:1}.two-fields input,.wide-field input,.two-fields select{opacity:1;inset:auto;left:54px;top:31px;width:calc(100% - 66px);height:28px;border:0;outline:0;background:#fff;color:#2a2527;font:12px Inter,Arial,sans-serif;padding:0;z-index:2}.wide-field input{width:calc(100% - 101px);right:47px}.two-fields select{cursor:pointer;appearance:none}.two-fields small,.wide-field small{display:none}.two-fields input::placeholder,.wide-field input::placeholder{color:#8a8587;opacity:1}.eye{position:relative;z-index:3;cursor:pointer}</style>
+</head>
+<body>
+    <main class="signup-page">
+        <section class="showcase" aria-label="Scholarship opportunities">
+            <a class="brand brand-light" href="index.html"><span class="brand-badge"><i class="fa-solid fa-graduation-cap"></i></span><span><strong>ScholarMate</strong><small>Learn Today, Lead Tomorrow</small></span></a>
+            <div class="showcase-copy">
+                <p class="hand-note">Same<br>Students<br>Bigger<br>Futures ♡</p>
+                <h1>Join a <em>Brighter</em> Tomorrow</h1>
+                <p class="intro">Create your account and get access to thousands of scholarships, personalized recommendations, and tools to achieve your dreams.</p>
+                <span class="small-line"></span>
+                <ul class="benefits">
+                    <li><i class="fa-solid fa-magnifying-glass"></i><span><b>Discover scholarships</b><small>that match your profile</small></span></li>
+                    <li><i class="fa-solid fa-wand-magic-sparkles"></i><span><b>Get personalized recommendations</b><small>with AI</small></span></li>
+                    <li><i class="fa-regular fa-calendar-days"></i><span><b>Track deadlines</b><small>and never miss an opportunity</small></span></li>
+                    <li><i class="fa-solid fa-chart-line"></i><span><b>Build a brighter future</b><small>one step at a time</small></span></li>
+                </ul>
+            </div>
+            <p class="quote">“Education gives you the wings<br>to fly towards a better tomorrow.”<br><span>— A.P.J. Abdul Kalam</span></p>
+        </section>
+
+        <section class="form-side">
+            <p class="login-prompt">Already have an account? <a href="index.html">Log In</a></p>
+            <div class="form-card">
+                <svg class="leaf-decoration" viewBox="0 0 72 152" aria-hidden="true"><path d="M12 3c19 26 28 62 29 145" fill="none" stroke="#c99891" stroke-width="3" stroke-linecap="round"/><path d="M17 28C5 27 2 16 2 8c11 1 19 8 20 20M25 49C12 48 7 38 7 28c12 2 20 9 21 21M31 71c-13 0-19-10-18-20 12 1 20 8 21 20M36 94c-13 1-20-8-20-19 13 0 20 7 20 19M40 117c-12 2-20-5-21-16 12-1 20 5 21 16" fill="none" stroke="#c99891" stroke-width="2.5" stroke-linecap="round"/><path d="M19 22c9-6 15-13 16-21-11 2-17 9-16 21M27 43c10-4 16-10 18-19-11 1-18 7-18 19M33 66c10-3 17-9 19-17-11 0-18 6-19 17M38 89c10-2 17-7 20-15-11-1-18 4-20 15M41 113c10-1 18-5 21-13-11-2-19 2-21 13" fill="none" stroke="#c99891" stroke-width="2.5" stroke-linecap="round"/></svg>
+                <a class="brand brand-dark" href="index.html"><span class="brand-badge"><i class="fa-solid fa-graduation-cap"></i></span><span><strong>ScholarMate</strong><small>Learn Today, Lead Tomorrow</small></span></a>
+                <h2>Create Your Account</h2>
+                <p class="subheading">Take the first step towards a brighter future.</p>
+                <form id="signupForm" novalidate>
+                    <div class="two-fields">
+                        <label><i class="fa-regular fa-user"></i><span>Full Name<small>Enter your full name</small></span><input id="signupName" aria-label="Full name" type="text" placeholder="Enter your full name"></label>
+                        <label><i class="fa-regular fa-envelope"></i><span>Email Address<small>you@example.com</small></span><input id="signupEmail" aria-label="Email address" type="email" placeholder="you@example.com"></label>
+                        <label><i class="fa-solid fa-phone"></i><span>Phone Number <em>(Optional)</em><small>+91 98765 43210</small></span><input id="signupPhone" aria-label="Phone number" type="tel" placeholder="+91 98765 43210"></label>
+                        <label><i class="fa-solid fa-users"></i><span>I am a<small>Student</small></span><i class="fa-solid fa-chevron-down select-arrow"></i><select id="signupRole" aria-label="Role"><option>Student</option><option>Parent</option><option>Teacher</option></select></label>
+                    </div>
+                    <label class="wide-field"><i class="fa-solid fa-lock"></i><span>Password<small>Create a strong password</small></span><input id="signupPassword" aria-label="Password" type="password" placeholder="Create a strong password"><i class="fa-regular fa-eye eye"></i></label>
+                    <label class="wide-field"><i class="fa-solid fa-lock"></i><span>Confirm Password<small>Re-enter your password</small></span><input id="signupConfirmPassword" aria-label="Confirm password" type="password" placeholder="Re-enter your password"><i class="fa-regular fa-eye eye"></i></label>
+                    <label class="terms"><input id="termsAccepted" type="checkbox"> <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span></label>
+                    <button class="create-btn" type="submit">Create Account <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="or"><span>OR</span></div>
+                <div class="social-signup"><button><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.72 1.22 9.22 3.6l6.84-6.84C35.9 2.37 30.36 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.97 6.19C12.43 13.64 17.75 9.5 24 9.5Z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.14-3.09-.4-4.55H24v8.6h12.92c-.56 2.96-2.23 5.47-4.75 7.16l7.73 6C44.42 37.6 46.98 31.56 46.98 24.55Z"/><path fill="#FBBC05" d="M10.53 28.59a14.5 14.5 0 0 1 0-9.18l-7.97-6.19A24 24 0 0 0 0 24c0 3.87.92 7.53 2.56 10.78l7.97-6.19Z"/><path fill="#34A853" d="M24 48c6.48 0 11.92-2.15 15.89-5.84l-7.73-6c-2.15 1.44-4.9 2.29-8.16 2.29-6.25 0-11.57-4.14-13.47-9.86l-7.97 6.19C6.51 42.62 14.62 48 24 48Z"/></svg>Sign up with Google</button><button><span class="microsoft"><i></i><i></i><i></i><i></i></span>Sign up with Microsoft</button></div>
+                <aside class="institution"><i class="fa-solid fa-graduation-cap"></i><p><b>Already a student at your institution?</b><span>Use your institutional email for better matches and exclusive opportunities!</span></p><button aria-label="Continue"><i class="fa-solid fa-arrow-right"></i></button></aside>
+            </div>
+        </section>
+    </main>
+    <footer><a class="brand brand-light" href="index.html"><span class="brand-badge"><i class="fa-solid fa-graduation-cap"></i></span><span><strong>ScholarMate</strong><small>Learn Today, Lead Tomorrow</small></span></a><nav><a href="#">Home</a><a href="#">Scholarships</a><a href="#">How It Works</a><a href="#">About</a><a href="#">Contact</a></nav><div class="footer-social"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-youtube"></i></div><p>© 2026 ScholarMate. All rights reserved.</p><span class="footer-note">Better Students<br>Brighter Tomorrows ♡</span></footer>
+    <script>
+        document.querySelectorAll('.eye').forEach((eye) => {
+            eye.addEventListener('click', () => {
+                const input = eye.parentElement.querySelector('input');
+                const isPassword = input.type === 'password';
+                input.type = isPassword ? 'text' : 'password';
+                eye.classList.toggle('fa-eye', !isPassword);
+                eye.classList.toggle('fa-eye-slash', isPassword);
+            });
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
