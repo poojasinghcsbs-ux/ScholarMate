@@ -1,1 +1,81 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ScholarMate — My Applications</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="portal.css"></head><body><div class="shell"><aside class="sidebar"><a class="brand" href="dashboard.html"><span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span><span><b>ScholarMate</b><small>Learn Today, Lead Tomorrow</small></span></a><nav class="nav"><a href="dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a><a href="find-scholarships.html"><i class="fa-solid fa-magnifying-glass"></i>Find Scholarships</a><a class="active" href="my-applications.html"><i class="fa-regular fa-clipboard"></i>My Applications</a><a href="deadlines.html"><i class="fa-regular fa-clock"></i>Deadlines</a><a href="ai-recommendations.html"><i class="fa-solid fa-wand-magic-sparkles"></i>AI Recommendations</a><a href="profile.html"><i class="fa-regular fa-user"></i>My Profile</a><a href="notifications.html"><i class="fa-regular fa-bell"></i>Notifications <em class="badge">3</em></a><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></nav><div class="side-art"></div><a class="logout" href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></aside><main class="content"><header class="topbar"><label class="search"><i class="fa-solid fa-magnifying-glass"></i><input data-search placeholder="Search your applications..."></label><button class="bell"><i class="fa-regular fa-bell"></i></button><div class="student"><span class="avatar"><i class="fa-regular fa-user"></i></span><span><b>Pooja Singh</b><small>Student</small></span></div></header><section class="page"><div class="heading-row"><div><p class="eyebrow">APPLICATION TRACKER</p><h1 class="page-title">My applications</h1><p class="subcopy">Stay on top of every application, update and document in one place.</p></div><a class="primary" href="find-scholarships.html"><i class="fa-solid fa-plus"></i> Find scholarships</a></div><section class="summary-grid"><article class="panel summary"><span>Submitted</span><b>5</b><i class="fa-regular fa-file-lines"></i></article><article class="panel summary"><span>Under review</span><b>2</b><i class="fa-solid fa-hourglass-half"></i></article><article class="panel summary"><span>Shortlisted</span><b>1</b><i class="fa-solid fa-star"></i></article><article class="panel summary"><span>Action needed</span><b>2</b><i class="fa-regular fa-bell"></i></article></section><section class="panel table-panel"><div class="section-head"><h2>All applications</h2><span>Sorted by latest activity</span></div><div class="table-wrap"><table><thead><tr><th>SCHOLARSHIP</th><th>APPLIED ON</th><th>STATUS</th><th>NEXT STEP</th><th></th></tr></thead><tbody><tr data-searchable><td><strong>Tata Undergraduate Scholarship</strong><br><small>₹50,000 / year</small></td><td>15 Aug 2026</td><td><span class="status submitted">Submitted</span></td><td>Await provider response</td><td><button class="text-link" data-open-application>View</button></td></tr><tr data-searchable><td><strong>Adani Foundation Scholarship</strong><br><small>₹60,000 / year</small></td><td>02 Sep 2026</td><td><span class="status review">Under Review</span></td><td>Keep documents ready</td><td><button class="text-link" data-open-application>View</button></td></tr><tr data-searchable><td><strong>SBI Asha Scholarship</strong><br><small>₹1,00,000 / year</small></td><td>20 Aug 2026</td><td><span class="status shortlisted">Shortlisted</span></td><td>Upload income certificate</td><td><button class="text-link" data-open-application>View</button></td></tr><tr data-searchable><td><strong>Reliance Foundation Scholarship</strong><br><small>₹2,00,000 / year</small></td><td>11 Sep 2026</td><td><span class="status draft">Draft</span></td><td>Complete personal details</td><td><button class="text-link" data-open-application>Continue</button></td></tr></tbody></table></div></section></section></main></div><script src="portal.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScholarMate — My Applications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="my-applications.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="dashboard.html"><span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span><span><b>ScholarMate</b><small>Learn Today, Lead Tomorrow</small></span></a>
+      <nav>
+        <a href="dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a>
+        <a href="find-scholarships.html"><i class="fa-solid fa-magnifying-glass"></i>Find Scholarships</a>
+        <a class="active" href="my-applications.html"><i class="fa-regular fa-clipboard"></i>My Applications</a>
+        <a href="renewal-tracking.html"><i class="fa-solid fa-arrows-rotate"></i>Renewal Tracking</a>
+        <a href="deadlines.html"><i class="fa-regular fa-clock"></i>Deadlines</a>
+        <a href="ai-recommendations.html"><i class="fa-solid fa-wand-magic-sparkles"></i>AI Recommendations</a>
+        <a href="profile.html"><i class="fa-regular fa-user"></i>My Profile</a>
+        <a href="notifications.html"><i class="fa-regular fa-bell"></i>Notifications <em>3</em></a>
+        <a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+      </nav>
+      <img class="sidebar-art" src="assets/images/renewal-sidebar.jpeg" alt="Small steps big opportunities">
+      <a class="logout" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <label class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="search" type="search" placeholder="Search scholarships, providers, or keywords..."></label>
+        <div class="top-actions"><button class="notification" aria-label="Notifications"><i class="fa-regular fa-bell"></i><span></span></button><div class="student"><span class="avatar"><i class="fa-regular fa-user"></i></span><span><b id="student-name">Guest Student</b><small id="student-role">Browse scholarships</small></span><i class="fa-solid fa-chevron-down"></i></div></div>
+      </header>
+
+      <section class="page">
+        <div class="breadcrumb"><a href="dashboard.html"><i class="fa-solid fa-arrow-left"></i> Dashboard</a><i class="fa-solid fa-chevron-right"></i><b>My Applications</b></div>
+        <section class="hero">
+          <img src="assets/images/applications-banner.jpeg" alt="Every application is a step closer to your dreams">
+          <div class="hero-copy"><h1>My Applications</h1><p>Track the status of your scholarship applications in one place.</p></div>
+        </section>
+
+        <section id="guest-state" class="guest-state" hidden>
+          <span class="guest-icon"><i class="fa-regular fa-folder-open"></i></span>
+          <h2>Login to view your applications</h2>
+          <p>Your application history, updates, and saved scholarships will appear here after you login.</p>
+          <a href="index.html">Login to ScholarMate <i class="fa-solid fa-arrow-right"></i></a>
+        </section>
+
+        <section id="application-content" hidden>
+          <div class="stats" id="stats"></div>
+          <div class="content-grid">
+            <section class="applications-area">
+              <div class="toolbar">
+                <div class="tabs" role="tablist">
+                  <button class="selected" data-filter="all">All Applications <span>(5)</span></button>
+                  <button data-filter="review">Under Review <span>(1)</span></button>
+                  <button data-filter="shortlisted">Shortlisted <span>(1)</span></button>
+                  <button data-filter="not-selected">Not Selected <span>(1)</span></button>
+                  <button data-filter="saved">Saved <span>(2)</span></button>
+                </div>
+                <label class="sort">Sort by <select id="sort"><option value="recent">Most Recent</option><option value="deadline">Deadline</option><option value="name">Name</option></select></label>
+              </div>
+              <div id="application-list" class="application-list"></div>
+            </section>
+            <aside class="right-column">
+              <section class="side-card timeline"><h2>Application Timeline</h2><div id="timeline"></div></section>
+              <section class="side-card quick"><h2>Quick Actions</h2><a href="find-scholarships.html"><i class="fa-solid fa-magnifying-glass"></i>Find More Scholarships</a><a href="ai-recommendations.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Improve Profile with AI</a><a href="deadlines.html"><i class="fa-regular fa-calendar-days"></i>Check Deadlines</a><button id="reminder"><i class="fa-regular fa-bell"></i>Set Reminders</button></section>
+              <img class="quote" src="assets/images/applications-quote.jpeg" alt="Patience today, opportunities tomorrow">
+            </aside>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="my-applications.js"></script>
+</body>
+</html>

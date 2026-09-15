@@ -1,11 +1,11 @@
 (() => {
   const logos = {
-    'Tata Undergraduate Scholarship': 'logo-tata.png',
-    'Reliance Foundation Scholarship': 'logo-reliance.png',
-    'SBI Asha Scholarship': 'logo-sbi.png',
-    'INSPIRE Scholarship': 'logo-india.svg',
-    'Adani Foundation Scholarship': 'logo-adani.png',
-    'Central Sector Scholarship': 'logo-india.svg'
+    'Tata Undergraduate Scholarship': 'assets/images/logo-tata.png',
+    'Reliance Foundation Scholarship': 'assets/images/logo-reliance.png',
+    'SBI Asha Scholarship': 'assets/images/logo-sbi.png',
+    'INSPIRE Scholarship': 'assets/images/logo-india.svg',
+    'Adani Foundation Scholarship': 'assets/images/logo-adani.png',
+    'Central Sector Scholarship': 'assets/images/logo-india.svg'
   };
   const profile = JSON.parse(localStorage.getItem('scholarMateProfile') || '{}');
   const signedIn = Boolean(localStorage.getItem('scholarMateSession'));
@@ -63,9 +63,9 @@
 
   const topQuote = document.querySelector('.quote');
   const bottomQuote = document.querySelector('.step');
-  if (topQuote) topQuote.src = 'explore-top-quote.jpeg';
+  if (topQuote) topQuote.src = 'assets/images/explore-top-quote.jpeg';
   if (bottomQuote) {
-    bottomQuote.innerHTML = '<img src="explore-bottom-quote.jpeg" alt="Scholarship opportunity quote">';
+    bottomQuote.innerHTML = '<img src="assets/images/explore-bottom-quote.jpeg" alt="Scholarship opportunity quote">';
   }
 
   const popular = document.querySelector('.popular');
