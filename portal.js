@@ -1,0 +1,11 @@
+const portalToast=(message)=>{let toast=document.querySelector('.toast');if(!toast){toast=document.createElement('div');toast.className='toast';document.body.append(toast)}toast.textContent=message;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2500)};
+
+document.querySelectorAll('[data-save]').forEach(button=>button.addEventListener('click',()=>{button.classList.toggle('saved');button.innerHTML=button.classList.contains('saved')?'<i class="fa-solid fa-bookmark"></i>':'<i class="fa-regular fa-bookmark"></i>';portalToast(button.classList.contains('saved')?'Scholarship saved to your shortlist.':'Removed from shortlist.')}));
+document.querySelectorAll('[data-apply]').forEach(button=>button.addEventListener('click',()=>{button.textContent='Application started ✓';button.disabled=true;portalToast('Your application workspace is ready.')}));
+document.querySelectorAll('[data-filter]').forEach(control=>control.addEventListener('change',()=>portalToast('Filters updated for your scholarship search.')));
+document.querySelector('[data-clear-filters]')?.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(field=>field.value='');portalToast('Filters cleared. Showing all scholarships.')});
+document.querySelectorAll('[data-open-application]').forEach(button=>button.addEventListener('click',()=>portalToast('Application details opened in your workspace.')));
+document.querySelector('[data-mark-read]')?.addEventListener('click',()=>{document.querySelectorAll('.notice-card.unread').forEach(card=>card.classList.remove('unread'));portalToast('All notifications marked as read.')});
+document.querySelector('[data-save-settings]')?.addEventListener('click',()=>portalToast('Your settings have been saved.'));
+document.querySelectorAll('.settings-tabs button').forEach(tab=>tab.addEventListener('click',()=>{document.querySelector('.settings-tabs .active').classList.remove('active');tab.classList.add('active');portalToast(`${tab.textContent.trim()} settings selected.`)}));
+const search=document.querySelector('[data-search]');search?.addEventListener('input',()=>{const query=search.value.toLowerCase();document.querySelectorAll('[data-searchable]').forEach(item=>item.style.display=item.textContent.toLowerCase().includes(query)?'':'none')});

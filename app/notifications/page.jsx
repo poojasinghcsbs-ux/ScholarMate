@@ -1,0 +1,3 @@
+'use client';
+import Portal,{useStudent} from '../components/Portal';import Link from 'next/link';
+export default function Notifications(){const {signedIn}=useStudent();return <Portal active="Notifications"><div className="page"><h1 className="page-title">Notifications</h1><p className="subcopy">Updates about your applications, matches and deadlines.</p><section className="empty"><h2>{signedIn?'You are all caught up!':'Log in to see notifications'}</h2><p>{signedIn?'New updates will appear here when you apply for scholarships.':'Scholarship alerts are available after login and profile completion.'}</p>{!signedIn&&<Link href="/login" className="primary">Log In</Link>}</section></div></Portal>}

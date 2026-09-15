@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScholarMate | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="dashboard.css"><link rel="stylesheet" href="dashboard-fixes.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="logo" href="home.html"><span><i class="fa-solid fa-graduation-cap"></i></span><div><b>ScholarMate</b><small>Learn Today, Lead Tomorrow</small></div></a>
+    <nav><a class="active" href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a><a href="find-scholarships.html"><i class="fa-solid fa-magnifying-glass"></i> Find Scholarships</a><a href="my-applications.html"><i class="fa-regular fa-clipboard"></i> My Applications</a><a href="deadlines.html"><i class="fa-regular fa-clock"></i> Deadlines</a><a href="ai-recommendations.html"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Recommendations</a><a href="profile.html"><i class="fa-regular fa-user"></i> My Profile</a><a href="notifications.html"><i class="fa-regular fa-bell"></i> Notifications <em id="sideNotice">0</em></a><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></nav>
+    <img class="side-art" src="profile-sidebar.jpeg" alt="Small Steps, Big Opportunities"><a class="logout" data-logout href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+  </aside>
+  <main>
+    <header><form id="topSearch"><i class="fa-solid fa-magnifying-glass"></i><input id="globalSearch" placeholder="Search scholarships, providers, or keywords..."></form><div class="head-actions"><button id="bellButton" aria-label="Notifications"><i class="fa-regular fa-bell"></i><b id="bellCount">0</b></button><img id="topAvatar" alt="Profile photo"><div><strong id="topName">Student User</strong><small>Student</small></div><i class="fa-solid fa-chevron-down"></i></div></header>
+    <div class="layout">
+      <section class="content">
+        <section class="welcome"><img src="dashboard-banner.jpeg" alt="Student at college"><div><h1>Good <span id="greeting">Morning</span>, <span id="welcomeName">Student</span>! <i class="fa-solid fa-sun"></i></h1><p>Here’s your scholarship journey at a glance.</p><em>“A little progress each day adds up to big opportunities.”</em></div></section>
+        <section class="stat-grid"><article><span class="applied"><i class="fa-regular fa-file-lines"></i></span><b id="appliedCount">0</b><strong>Applied</strong><small>Scholarships you’ve applied to</small></article><article><span class="review"><i class="fa-solid fa-hourglass-half"></i></span><b id="reviewCount">0</b><strong>Under Review</strong><small>Waiting for a response</small></article><article><span class="shortlisted"><i class="fa-solid fa-star"></i></span><b id="shortlistedCount">0</b><strong>Shortlisted</strong><small>You’re one step closer!</small></article><article><span class="deadline"><i class="fa-regular fa-calendar-days"></i></span><b id="deadlineCount">0</b><strong>Upcoming Deadlines</strong><small>Don’t miss out!</small></article></section>
+        <section class="section-head"><div><h2><i class="fa-solid fa-wand-magic-sparkles"></i> AI Recommendations For You</h2><p>Based on your profile and eligibility, here are scholarships you might be interested in.</p></div><a href="ai-recommendations.html">View All <i class="fa-solid fa-arrow-right"></i></a></section>
+        <section class="recommendations" id="recommendationCards"></section>
+        <section class="lower"><article class="applications"><div class="card-head"><h2>Recent Applications</h2><a href="my-applications.html">View All</a></div><div class="app-table" id="applicationTable"></div></article><article class="progress-card"><h2>Your Progress</h2><div class="progress-overview"><div class="ring" id="progressRing"><b id="progressPercent">0%</b></div><div><strong>Profile Completion</strong><p>Complete your profile to get better recommendations.</p></div></div><ul id="progressList"></ul><a class="profile-action" href="profile.html">Complete Profile <i class="fa-solid fa-arrow-right"></i></a></article></section>
+      </section>
+      <aside class="rightbar"><section class="calendar"><div class="cal-head"><h2 id="monthTitle">September 2025</h2><span><button id="prevMonth"><i class="fa-solid fa-chevron-left"></i></button><button id="nextMonth"><i class="fa-solid fa-chevron-right"></i></button></span></div><div class="weekdays"><b>Sun</b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b><b>Sat</b></div><div class="days" id="calendarDays"></div></section><section class="deadline-list"><div class="card-head"><h2>Upcoming Deadlines</h2><a href="deadlines.html">View All</a></div><div id="deadlineList"></div></section><section class="notifications"><div class="card-head"><h2>Latest Notifications</h2><a href="notifications.html">View All</a></div><div id="notificationList"></div></section><section class="quote"><div class="quote-leaves"><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-leaf"></i></div><p>“Education is not a privilege,<br>it’s a possibility for everyone.”</p><b>♡</b></section></aside>
+    </div>
+  </main>
+  <div class="toast" id="toast"></div><script src="dashboard.js"></script><script src="dashboard-fixes.js"></script>
+</body></html>

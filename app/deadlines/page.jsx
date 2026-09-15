@@ -1,0 +1,3 @@
+'use client';
+import Portal,{useStudent} from '../components/Portal';import Link from 'next/link';
+export default function Deadlines(){const {signedIn}=useStudent();return <Portal active="Deadlines"><div className="page"><h1 className="page-title">Upcoming Deadlines</h1><p className="subcopy">A clear view of what needs your attention next.</p><section className="empty">{signedIn?<><h2>No deadline reminders yet</h2><p>Deadlines will appear after you apply for scholarships.</p><Link className="primary" href="/scholarships">Explore Scholarships</Link></>:<><h2>Log in to receive deadline reminders</h2><p>We will show only deadlines related to your applications.</p><Link className="primary" href="/login">Log In</Link></>}</section></div></Portal>}
