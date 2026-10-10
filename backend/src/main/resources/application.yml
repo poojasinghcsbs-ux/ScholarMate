@@ -2,13 +2,16 @@ spring:
   application:
     name: scholarmate-backend
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/scholarmate}
-    username: ${DB_USERNAME:postgres}
+    url: ${DB_URL:jdbc:mysql://localhost:3306/scholarmate?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Kolkata}
+    username: ${DB_USERNAME:root}
     password: ${DB_PASSWORD:}
   jpa:
     hibernate:
       ddl-auto: update
     open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
 
 server:
   port: ${PORT:8080}
